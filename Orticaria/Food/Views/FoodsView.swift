@@ -32,7 +32,7 @@ struct FoodsView: View {
                 }
             }
             
-            .navigationBarTitle("Lista Espandibile")
+            .navigationBarTitle("Lista")
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt:  "Search food items")
 
             .listStyle(.grouped)
