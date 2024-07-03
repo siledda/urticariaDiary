@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		881407CD2C31BFB600590C25 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881407CC2C31BFB600590C25 /* InfoView.swift */; };
+		8833D56D2C30751F00535404 /* OrticariaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D56C2C30751F00535404 /* OrticariaApp.swift */; };
+		8833D56F2C30751F00535404 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D56E2C30751F00535404 /* ContentView.swift */; };
+		8833D5712C30752000535404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8833D5702C30752000535404 /* Assets.xcassets */; };
+		8833D5752C30752000535404 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8833D5742C30752000535404 /* Preview Assets.xcassets */; };
+		8833D57F2C30752000535404 /* OrticariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D57E2C30752000535404 /* OrticariaTests.swift */; };
+		8833D5892C30752000535404 /* OrticariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D5882C30752000535404 /* OrticariaUITests.swift */; };
+		8833D58B2C30752000535404 /* OrticariaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D58A2C30752000535404 /* OrticariaUITestsLaunchTests.swift */; };
+		8833D59B2C30768500535404 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D59A2C30768500535404 /* RoundedView.swift */; };
+		8898EC332C32DD190098F77F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898EC322C32DD190098F77F /* ContentViewModel.swift */; };
+		8898EC362C32EC1E0098F77F /* FoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898EC352C32EC1E0098F77F /* FoodsView.swift */; };
+		88C4968C2C34398000075499 /* LabelAndIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4968B2C34398000075499 /* LabelAndIconView.swift */; };
+		88C4968E2C343C6000075499 /* FoodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4968D2C343C6000075499 /* FoodsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8833D57B2C30752000535404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8833D5612C30751F00535404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8833D5682C30751F00535404;
+			remoteInfo = Orticaria;
+		};
+		8833D5852C30752000535404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8833D5612C30751F00535404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8833D5682C30751F00535404;
+			remoteInfo = Orticaria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		881407CC2C31BFB600590C25 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		8833D5692C30751F00535404 /* Orticaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orticaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8833D56C2C30751F00535404 /* OrticariaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrticariaApp.swift; sourceTree = "<group>"; };
+		8833D56E2C30751F00535404 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8833D5702C30752000535404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8833D5722C30752000535404 /* Orticaria.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orticaria.entitlements; sourceTree = "<group>"; };
+		8833D5742C30752000535404 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8833D57A2C30752000535404 /* OrticariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrticariaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8833D57E2C30752000535404 /* OrticariaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrticariaTests.swift; sourceTree = "<group>"; };
+		8833D5842C30752000535404 /* OrticariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrticariaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8833D5882C30752000535404 /* OrticariaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrticariaUITests.swift; sourceTree = "<group>"; };
+		8833D58A2C30752000535404 /* OrticariaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrticariaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8833D59A2C30768500535404 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		8898EC322C32DD190098F77F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		8898EC352C32EC1E0098F77F /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
+		88C4968B2C34398000075499 /* LabelAndIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndIconView.swift; sourceTree = "<group>"; };
+		88C4968D2C343C6000075499 /* FoodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8833D5662C30751F00535404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5772C30752000535404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5812C30752000535404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8833D5602C30751F00535404 = {
+			isa = PBXGroup;
+			children = (
+				8833D56B2C30751F00535404 /* Orticaria */,
+				8833D57D2C30752000535404 /* OrticariaTests */,
+				8833D5872C30752000535404 /* OrticariaUITests */,
+				8833D56A2C30751F00535404 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8833D56A2C30751F00535404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8833D5692C30751F00535404 /* Orticaria.app */,
+				8833D57A2C30752000535404 /* OrticariaTests.xctest */,
+				8833D5842C30752000535404 /* OrticariaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8833D56B2C30751F00535404 /* Orticaria */ = {
+			isa = PBXGroup;
+			children = (
+				884223532C358D00009D26EF /* Components */,
+				8898EC342C32EC050098F77F /* Food */,
+				8898EC2F2C32DADE0098F77F /* Home */,
+				8833D5972C30763F00535404 /* CommonViews */,
+				8833D56C2C30751F00535404 /* OrticariaApp.swift */,
+				8833D5702C30752000535404 /* Assets.xcassets */,
+				8833D5722C30752000535404 /* Orticaria.entitlements */,
+				8833D5732C30752000535404 /* Preview Content */,
+			);
+			path = Orticaria;
+			sourceTree = "<group>";
+		};
+		8833D5732C30752000535404 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8833D5742C30752000535404 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8833D57D2C30752000535404 /* OrticariaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8833D57E2C30752000535404 /* OrticariaTests.swift */,
+			);
+			path = OrticariaTests;
+			sourceTree = "<group>";
+		};
+		8833D5872C30752000535404 /* OrticariaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8833D5882C30752000535404 /* OrticariaUITests.swift */,
+				8833D58A2C30752000535404 /* OrticariaUITestsLaunchTests.swift */,
+			);
+			path = OrticariaUITests;
+			sourceTree = "<group>";
+		};
+		8833D5972C30763F00535404 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				8833D59A2C30768500535404 /* RoundedView.swift */,
+				881407CC2C31BFB600590C25 /* InfoView.swift */,
+				88C4968B2C34398000075499 /* LabelAndIconView.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		884223532C358D00009D26EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8898EC2F2C32DADE0098F77F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8898EC312C32DCDA0098F77F /* ViewModels */,
+				8898EC302C32DAED0098F77F /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8898EC302C32DAED0098F77F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8833D56E2C30751F00535404 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8898EC312C32DCDA0098F77F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8898EC322C32DD190098F77F /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8898EC342C32EC050098F77F /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				88C4968A2C3438B200075499 /* Models */,
+				88C496892C34366D00075499 /* ViewModels */,
+				88C496882C34365000075499 /* Views */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		88C496882C34365000075499 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8898EC352C32EC1E0098F77F /* FoodsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88C496892C34366D00075499 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				88C4968D2C343C6000075499 /* FoodsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88C4968A2C3438B200075499 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8833D5682C30751F00535404 /* Orticaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8833D58E2C30752000535404 /* Build configuration list for PBXNativeTarget "Orticaria" */;
+			buildPhases = (
+				8833D5652C30751F00535404 /* Sources */,
+				8833D5662C30751F00535404 /* Frameworks */,
+				8833D5672C30751F00535404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Orticaria;
+			productName = Orticaria;
+			productReference = 8833D5692C30751F00535404 /* Orticaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8833D5792C30752000535404 /* OrticariaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8833D5912C30752000535404 /* Build configuration list for PBXNativeTarget "OrticariaTests" */;
+			buildPhases = (
+				8833D5762C30752000535404 /* Sources */,
+				8833D5772C30752000535404 /* Frameworks */,
+				8833D5782C30752000535404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8833D57C2C30752000535404 /* PBXTargetDependency */,
+			);
+			name = OrticariaTests;
+			productName = OrticariaTests;
+			productReference = 8833D57A2C30752000535404 /* OrticariaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8833D5832C30752000535404 /* OrticariaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8833D5942C30752000535404 /* Build configuration list for PBXNativeTarget "OrticariaUITests" */;
+			buildPhases = (
+				8833D5802C30752000535404 /* Sources */,
+				8833D5812C30752000535404 /* Frameworks */,
+				8833D5822C30752000535404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8833D5862C30752000535404 /* PBXTargetDependency */,
+			);
+			name = OrticariaUITests;
+			productName = OrticariaUITests;
+			productReference = 8833D5842C30752000535404 /* OrticariaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8833D5612C30751F00535404 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8833D5682C30751F00535404 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8833D5792C30752000535404 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8833D5682C30751F00535404;
+					};
+					8833D5832C30752000535404 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8833D5682C30751F00535404;
+					};
+				};
+			};
+			buildConfigurationList = 8833D5642C30751F00535404 /* Build configuration list for PBXProject "Orticaria" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8833D5602C30751F00535404;
+			productRefGroup = 8833D56A2C30751F00535404 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8833D5682C30751F00535404 /* Orticaria */,
+				8833D5792C30752000535404 /* OrticariaTests */,
+				8833D5832C30752000535404 /* OrticariaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8833D5672C30751F00535404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8833D5752C30752000535404 /* Preview Assets.xcassets in Resources */,
+				8833D5712C30752000535404 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5782C30752000535404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5822C30752000535404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8833D5652C30751F00535404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881407CD2C31BFB600590C25 /* InfoView.swift in Sources */,
+				8833D56F2C30751F00535404 /* ContentView.swift in Sources */,
+				88C4968C2C34398000075499 /* LabelAndIconView.swift in Sources */,
+				8833D56D2C30751F00535404 /* OrticariaApp.swift in Sources */,
+				8833D59B2C30768500535404 /* RoundedView.swift in Sources */,
+				8898EC362C32EC1E0098F77F /* FoodsView.swift in Sources */,
+				88C4968E2C343C6000075499 /* FoodsViewModel.swift in Sources */,
+				8898EC332C32DD190098F77F /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5762C30752000535404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8833D57F2C30752000535404 /* OrticariaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8833D5802C30752000535404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8833D5892C30752000535404 /* OrticariaUITests.swift in Sources */,
+				8833D58B2C30752000535404 /* OrticariaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8833D57C2C30752000535404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8833D5682C30751F00535404 /* Orticaria */;
+			targetProxy = 8833D57B2C30752000535404 /* PBXContainerItemProxy */;
+		};
+		8833D5862C30752000535404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8833D5682C30751F00535404 /* Orticaria */;
+			targetProxy = 8833D5852C30752000535404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8833D58C2C30752000535404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8833D58D2C30752000535404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8833D58F2C30752000535404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Orticaria/Orticaria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orticaria/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.Orticaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8833D5902C30752000535404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Orticaria/Orticaria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Orticaria/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.Orticaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8833D5922C30752000535404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.OrticariaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orticaria.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orticaria";
+			};
+			name = Debug;
+		};
+		8833D5932C30752000535404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.OrticariaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orticaria.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orticaria";
+			};
+			name = Release;
+		};
+		8833D5952C30752000535404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.OrticariaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orticaria;
+			};
+			name = Debug;
+		};
+		8833D5962C30752000535404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = silvia.OrticariaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Orticaria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8833D5642C30751F00535404 /* Build configuration list for PBXProject "Orticaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8833D58C2C30752000535404 /* Debug */,
+				8833D58D2C30752000535404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8833D58E2C30752000535404 /* Build configuration list for PBXNativeTarget "Orticaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8833D58F2C30752000535404 /* Debug */,
+				8833D5902C30752000535404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8833D5912C30752000535404 /* Build configuration list for PBXNativeTarget "OrticariaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8833D5922C30752000535404 /* Debug */,
+				8833D5932C30752000535404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8833D5942C30752000535404 /* Build configuration list for PBXNativeTarget "OrticariaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8833D5952C30752000535404 /* Debug */,
+				8833D5962C30752000535404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8833D5612C30751F00535404 /* Project object */;
+}
