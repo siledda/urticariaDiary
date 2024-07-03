@@ -53,7 +53,9 @@ fastlane/bin
 *.xcworkspace
 *.xcworkspace/contents.xcworkspacedata
 *.xcworkspace/xcuserdata
-*.xcworkspace/xcuserdata/yourname.xcuserdatad
+*.xcuserdatad
+*.xcuserstate
+
 
 # Other
 *.hmap
