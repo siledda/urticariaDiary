@@ -1,0 +1,58 @@
+{
+    "list": [
+        {
+            "title": "Verdura",
+            "isCancellable": false,
+            "elements": [
+                "Pomodori",
+                "Melanzane",
+                "Spinaci",
+                "Avocado",
+                "Zucchine",
+                "Patate",
+                "Peperoni",
+                "Asparagi",
+                "Barbabietole",
+                "Fagioli"
+            ]
+        },
+        {
+            "title": "Frutta",
+            "isCancellable": false,
+            "elements": [
+                "Banane",
+                "Ananas",
+                "Mele",
+                "Uva",
+                "Ciliegie",
+                "Mango",
+                "Fragole",
+                "Pere",
+                "Kiwi",
+                "Pesche"
+            ]
+        },
+        {
+            "title": "Pesce",
+            "isCancellable": false,
+            "elements": [
+                "Tonno",
+                "Sgombro",
+                "Alici",
+                "Sardine",
+                "Acciughe",
+                "Aringhe",
+                "Baccalà",
+                "Merluzzo",
+                "Caviale",
+                "Polpo"
+            ]
+        },
+        {
+            "title": "Aggiunti da me",
+            "isCancellable": true,
+            "elements": []
+        }
+    ]
+}
+

@@ -10,70 +10,56 @@ import Foundation
 struct ListFoodsUIItem: Identifiable {
     var id = UUID()
     var title: String
+    var isCancellable = false
     var elements: [LabelAndIconUIItem] = []
 }
-
+ 
 class FoodsViewModel: ObservableObject {
     
-  //  LabelAndIconUIItemù
-    
-    
-    var dataVerdura: [LabelAndIconUIItem] = [
-        LabelAndIconUIItem(title: "Pomodori", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Melanzane", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Spinaci", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Avocado", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Zucchine", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Patate", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Peperoni", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Asparagi", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Barbabietole", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Fagioli", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill")
-    ]
-
-    var dataFrutta: [LabelAndIconUIItem] = [
-        LabelAndIconUIItem(title: "Banane", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Ananas", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Mele", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Uva", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Ciliegie", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Mango", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Fragole", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Pere", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Kiwi", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Pesche", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill")
-    ]
-
-    var dataPesce: [LabelAndIconUIItem] = [
-        LabelAndIconUIItem(title: "Tonno", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Sgombro", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Alici", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Sardine", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Acciughe", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Aringhe", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Baccalà", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Merluzzo", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Caviale", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill"),
-        LabelAndIconUIItem(title: "Polpo", iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill")
-    ]
-    
-    var myFood: [LabelAndIconUIItem] = []
-    
     @Published var list: [ListFoodsUIItem] = []
+    @Published var categoriesFood: [FoodCategory] = []
+    private var foodsAPI = FoodsAPI()
     
+    var searchItem = SearchBarUIItem()
     
-    init() {
-        load()
+    private func loadSearch() {
+        searchItem = SearchBarUIItem(
+            placeholder: "Cerca",
+            iconRightButton: "",
+            textRightButton: "Add",
+            action: { [weak self] in
+                   self?.add(name: "prova")
+            })
     }
     
-    func load() {
+    init() {
+        loadSearch()
+        fetchList()
         
-         list = [
-            ListFoodsUIItem(title: "Verdura", elements: dataVerdura),
-            ListFoodsUIItem(title: "Frutta", elements: dataFrutta),
-            ListFoodsUIItem(title: "Pesce", elements: dataPesce),
-            ListFoodsUIItem(title: "Aggiunti da me", elements: myFood)
-        ]
+        list.removeAll{ $0.elements.isEmpty }
+    }
+    
+    func fetchList() {
+        foodsAPI.fetchGroceryList()
+        self.list = mapListFood(items: foodsAPI.categoriesFood)
+        
+    }
+    
+    
+    private func mapListFood(items: [FoodCategory]) -> [ListFoodsUIItem] {
+        return items.map { food in
+            ListFoodsUIItem(title: food.title, isCancellable: food.isCancellable, elements: mapFood(names: food.elements))
+        }
+    }
+    
+    private func mapFood(names: [String]) ->  [LabelAndIconUIItem] {
+        return names.map { string in
+            LabelAndIconUIItem(title: string, iconName: "square", iconNameSelected: "checkmark.rectangle.portrait.fill")
+        }
+    }
+    
+    private func add(name: String) {
+        //Scrivere sul json
     }
     
 }

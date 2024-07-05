@@ -55,6 +55,7 @@ fastlane/bin
 *.xcworkspace/xcuserdata
 *.xcuserdatad
 *.xcuserstate
+*.xcbkptlist
 
 
 # Other
