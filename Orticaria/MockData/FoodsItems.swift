@@ -8,11 +8,11 @@
 import Foundation
 
 struct FoodsList: Codable {
-    let list: [FoodCategory]
+    var list: [FoodCategory]
 }
 
 struct FoodCategory: Codable {
     let title: String
     let isCancellable: Bool
-    let elements: [String]
+    var elements: [String]
 }

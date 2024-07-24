@@ -19,6 +19,10 @@ class FoodsViewModel: ObservableObject {
     @Published var list: [ListFoodsUIItem] = []
     @Published var categoriesFood: [FoodCategory] = []
     private var foodsAPI = FoodsAPI()
+    @Published var textResearch: String?
+    @Published var selectedDate = Date()
+    
+    private var savedInfo: SavedFoodsToday?
     
     var searchItem = SearchBarUIItem()
     
@@ -28,7 +32,7 @@ class FoodsViewModel: ObservableObject {
             iconRightButton: "",
             textRightButton: "Add",
             action: { [weak self] in
-                   self?.add(name: "prova")
+                self?.add()
             })
     }
     
@@ -42,7 +46,12 @@ class FoodsViewModel: ObservableObject {
     func fetchList() {
         foodsAPI.fetchGroceryList()
         self.list = mapListFood(items: foodsAPI.categoriesFood)
+    }
+    
+    func savedInfo(info: SavedFoodsToday) {
+        UserDefaults.standard.set(info, forKey: "SelectedItems")
         
+        debugPrint( UserDefaults.standard.set(info, forKey: "SelectedItems"))
     }
     
     
@@ -58,8 +67,12 @@ class FoodsViewModel: ObservableObject {
         }
     }
     
-    private func add(name: String) {
-        //Scrivere sul json
+    private func add() {
+        
+        guard let list = foodsAPI.list, let text = textResearch  else { return }
+        
+        foodsAPI.addItemToMyList(listContainer: list, newItem: text)
+        fetchList()
     }
     
 }

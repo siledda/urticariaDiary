@@ -15,14 +15,22 @@ struct FoodsView: View {
     @State var searchText: String = ""
     @State var isPresented = true
     
+    
+    
+    
     var body: some View {
         
         VStack {
+            Spacer()
+            
+            DatePickerCalendarTapView(date: $viewModel.selectedDate)
+            
             
             SearchView(item: viewModel.searchItem, searchText: $searchText)
                 .padding(.bottom, 8)
                 .onChange(of: searchText, { oldValue, newValue in
                     
+                    viewModel.textResearch = searchText
                     if newValue.isEmpty {
                         return
                     }
@@ -54,10 +62,10 @@ struct FoodsView: View {
                         }
                     }
                 }
-                
+
                 .onDelete { offsets in
                     delete(at: offsets)
-                }
+                  }
                 
             }
             
@@ -66,12 +74,17 @@ struct FoodsView: View {
             
             Button(action: saveData) {
                 Text("Salva")
-                    .padding()
+                    .font(.system(size: 18, weight: .bold)) 
+                    .frame(maxWidth: .infinity)
+                    .padding(.all)
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(8)
+
+                    
             }
-          
+           
+            .padding()
             
             
             .navigationTitle("Alimenti")
@@ -80,10 +93,12 @@ struct FoodsView: View {
     
     func delete(at offsets: IndexSet) {
        debugPrint("aaa")
+        // TODO: DA GESTIRE MA PRIMA VA GESTITO IL COLLEGAMENTO NEL BACKEND
     }
     
     private func saveData() {
-        UserDefaults.standard.set(selected, forKey: "SelectedItems")
+        viewModel.savedInfo(info: SavedFoodsToday(date: viewModel.todayDate, selected: selected))
+        
     }
     
     
@@ -95,7 +110,6 @@ struct FoodsView: View {
         }
     }
     
-        
 }
 
 #Preview {

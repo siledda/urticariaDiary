@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880BFCE32C4D547400DAC742 /* SavedFoodsToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880BFCE22C4D547400DAC742 /* SavedFoodsToday.swift */; };
 		881407CD2C31BFB600590C25 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881407CC2C31BFB600590C25 /* InfoView.swift */; };
 		882FFF262C36A11C003A586F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FFF252C36A11C003A586F /* SearchView.swift */; };
 		8833D56D2C30751F00535404 /* OrticariaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D56C2C30751F00535404 /* OrticariaApp.swift */; };
@@ -24,6 +25,7 @@
 		88A26A302C381CFA003764A2 /* FoodsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A26A2F2C381CFA003764A2 /* FoodsAPI.swift */; };
 		88C4968C2C34398000075499 /* LabelAndIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4968B2C34398000075499 /* LabelAndIconView.swift */; };
 		88C4968E2C343C6000075499 /* FoodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4968D2C343C6000075499 /* FoodsViewModel.swift */; };
+		88F9FADA2C4C68BA006A0371 /* DatePickerCalendarTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F9FAD92C4C68BA006A0371 /* DatePickerCalendarTapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880BFCE22C4D547400DAC742 /* SavedFoodsToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SavedFoodsToday.swift; path = Orticaria/CommonViews/SavedFoodsToday.swift; sourceTree = SOURCE_ROOT; };
 		881407CC2C31BFB600590C25 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		882FFF252C36A11C003A586F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8833D5692C30751F00535404 /* Orticaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orticaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +68,7 @@
 		88A26A2F2C381CFA003764A2 /* FoodsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsAPI.swift; sourceTree = "<group>"; };
 		88C4968B2C34398000075499 /* LabelAndIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndIconView.swift; sourceTree = "<group>"; };
 		88C4968D2C343C6000075499 /* FoodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsViewModel.swift; sourceTree = "<group>"; };
+		88F9FAD92C4C68BA006A0371 /* DatePickerCalendarTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCalendarTapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 				8833D59A2C30768500535404 /* RoundedView.swift */,
 				881407CC2C31BFB600590C25 /* InfoView.swift */,
 				88C4968B2C34398000075499 /* LabelAndIconView.swift */,
+				88F9FAD92C4C68BA006A0371 /* DatePickerCalendarTapView.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				88A26A2C2C381B9C003764A2 /* FoodsItems.swift */,
+				880BFCE22C4D547400DAC742 /* SavedFoodsToday.swift */,
 			);
 			name = Models;
 			path = ../Food/Models;
@@ -383,6 +389,8 @@
 				8833D56F2C30751F00535404 /* ContentView.swift in Sources */,
 				88A26A302C381CFA003764A2 /* FoodsAPI.swift in Sources */,
 				88C4968C2C34398000075499 /* LabelAndIconView.swift in Sources */,
+				88F9FADA2C4C68BA006A0371 /* DatePickerCalendarTapView.swift in Sources */,
+				880BFCE32C4D547400DAC742 /* SavedFoodsToday.swift in Sources */,
 				8833D56D2C30751F00535404 /* OrticariaApp.swift in Sources */,
 				88A26A2D2C381B9C003764A2 /* FoodsItems.swift in Sources */,
 				8833D59B2C30768500535404 /* RoundedView.swift in Sources */,
